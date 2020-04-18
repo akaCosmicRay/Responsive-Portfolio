@@ -43,6 +43,9 @@ h1 {
   font-size: 30px;
   line-height: 49px;
   border-bottom: 3px solid #dddddd;
+  background: white;
+  animation-name: example;
+  animation-duration: 10s;
 }
 
 h2,
@@ -212,6 +215,41 @@ input[type=submit] {
   font-size: 18px;
   color: #ffffff;
   cursor: pointer;
-  background: #4aaaa5;
+  background: purple;
+  animation-name: example;
+  animation-duration: 4s;
   border: 0 none;
+}
+
+@keyframes example {
+  from {background-color: purple;}
+  to {background-color: yellow;}
+} 
+
+
+
+
+@media only screen and (max-width: 980px) {
+  body {
+    background: lightblue;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  body {
+    background: pink;
+  }
+}
+
+
+@media only screen and (max-width: 640px) {
+  body {
+    background: purple;
+  
+  }
+  #masthead {
+    position: static;
+  }
+ 
 }
